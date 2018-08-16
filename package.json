@@ -4,5 +4,24 @@
   "main": "index.js",
   "repository": "https://github.com/khseok1060/graphql-typeorm-practice.git",
   "author": "Kwangho Suk <khseok1060@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd src && nodemon --exec ts-node index.ts"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.4",
+    "@types/helmet": "^0.0.38",
+    "@types/morgan": "^1.7.35",
+    "@types/node": "^10.7.1",
+    "nodemon": "^1.18.3",
+    "ts-node": "^7.0.1",
+    "tslint-config-prettier": "^1.14.0",
+    "typescript": "^3.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "graphql-yoga": "^1.16.1",
+    "helmet": "^3.13.0",
+    "morgan": "^1.9.0"
+  }
 }
