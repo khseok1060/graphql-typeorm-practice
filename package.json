@@ -1,0 +1,8 @@
+{
+  "name": "graphql-typeorm-practice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/khseok1060/graphql-typeorm-practice.git",
+  "author": "Kwangho Suk <khseok1060@gmail.com>",
+  "license": "MIT"
+}
