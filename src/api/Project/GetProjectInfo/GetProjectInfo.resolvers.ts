@@ -1,6 +1,6 @@
+import Project from "../../../entities/Project";
 import { Resolvers } from "../../../types/resolvers";
 import { GetProjectInfoQueryArgs, GetProjectInfoResponse } from "../../../types/graph";
-import Project from "../../../entities/Project";
 
 const resolvers: Resolvers = {
   Query: {

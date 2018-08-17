@@ -3,9 +3,11 @@ import {
   Column,
   CreateDateColumn,
   Entity,
+  OneToMany,
   PrimaryGeneratedColumn,
   UpdateDateColumn
 } from "typeorm";
+import User from "./User";
 
 @Entity()
 class Project extends BaseEntity {
@@ -14,6 +16,9 @@ class Project extends BaseEntity {
 
   @Column({ type: "text" })
   name: string;
+
+  @OneToMany(type => User, user => user.projects)
+  participants: User[];
 
   @CreateDateColumn()
   createdAt: string;

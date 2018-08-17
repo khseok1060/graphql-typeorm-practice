@@ -1,6 +1,7 @@
 type Project {
   id: Int!
   name: String
+  participants: [User]
   createdAt: String!
   updatedAt: String
 }

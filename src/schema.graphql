@@ -5,7 +5,13 @@ type AddNewProjectResponse {
 
 type Mutation {
   AddNewProject(name: String!): AddNewProjectResponse!
+  AddProjectParticipants(projectId: Int!, userId: Int!): AddProjectParticipantsResponse!
   SignUp(name: String!, position: String!): SignUpResponse!
+}
+
+type AddProjectParticipantsResponse {
+  ok: Boolean!
+  error: String
 }
 
 type GetProjectInfoResponse {
@@ -17,12 +23,12 @@ type GetProjectInfoResponse {
 type Query {
   GetProjectInfo(projectId: Int!): GetProjectInfoResponse!
   GetUserProfile(userId: Int!): GetUserProfileResponse!
-  user: User
 }
 
 type Project {
   id: Int!
   name: String
+  participants: [User]
   createdAt: String!
   updatedAt: String
 }
@@ -37,6 +43,8 @@ type User {
   id: Int!
   name: String!
   position: String
+  projectsId: Int!
+  projects: Project
   createdAt: String!
   updatedAt: String
 }

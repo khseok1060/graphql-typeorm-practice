@@ -1,0 +1,8 @@
+type AddProjectParticipantsResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Mutation {
+  AddProjectParticipants(projectId: Int!, userId: Int!): AddProjectParticipantsResponse!
+}

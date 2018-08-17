@@ -1,9 +1,9 @@
+import User from "../../../entities/User";
 import {
   GetUserProfileQueryArgs,
   GetUserProfileResponse
 } from "../../../types/graph";
 import { Resolvers } from "../../../types/resolvers";
-import User from "../../../entities/User";
 
 const resolvers: Resolvers = {
   Query: {

@@ -2,10 +2,8 @@ type User {
   id: Int!
   name: String!
   position: String
+  projectsId: Int!
+  projects: Project
   createdAt: String!
   updatedAt: String
-}
-
-type Query {
-  user: User
 }
