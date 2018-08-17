@@ -1,0 +1,8 @@
+type AddNewProjectResponse {
+  ok: Boolean!
+  error: String
+}
+
+type Mutation {
+  AddNewProject(name: String!): AddNewProjectResponse!
+}

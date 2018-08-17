@@ -1,0 +1,9 @@
+type GetProjectInfoResponse {
+  ok: Boolean!
+  error: String
+  project: Project
+}
+
+type Query {
+  GetProjectInfo(projectId: Int!): GetProjectInfoResponse!
+}
